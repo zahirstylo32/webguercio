@@ -1,7 +1,17 @@
+@import url('https://googleapis.com');
 body{
-    background-color: #4323d1;
+    background-color: #0724c9;
+    font-family: 'Caacupé One', sans-serif;
+    font-size: 57px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    margin-bottom: 24px; 
 }
-
+h1 {
+    color: goldenrod;
+}
 .hola {
     color: rgb(17, 133, 235);
 }
