@@ -1,7 +1,8 @@
-@import url('https://googleapis.com');
-body{
+
+
+body {
     background-color: #0724c9;
-    font-family: 'Caacupé One', sans-serif;
+    font-family: 'Caacupe One', sans-serif;
     font-size: 57px;
     font-weight: 400;
     text-transform: uppercase;
@@ -9,9 +10,11 @@ body{
     line-height: 1.2;
     margin-bottom: 24px; 
 }
+
 h1 {
     color: goldenrod;
 }
+
 .hola {
     color: rgb(17, 133, 235);
 }
