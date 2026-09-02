@@ -9,3 +9,6 @@ Al final de todo podes tocar un boton para ir a mi github y otro para ir a mi gm
 La pagina contiene principalmente los colores de boca en el modo claro(Amarillo y Azul) y oscuro(Azul y Amarillo)
 
 Esta hecho con Bootstrap, CSS, HTML y JS(para el modo claro y oscuro)
+
+Me base en un pagina web que mando el profesor como inspiracion (https://bradymacdonald.com/)
+y busque informacion en w3schools e ia
