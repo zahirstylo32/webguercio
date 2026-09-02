@@ -1,42 +1,123 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Zahir Guercio - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-1">
-                  <nav class="navbar">
+
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="https://instagram.com/zahir.guercio/">
-                <img src="assets\instagramlogo.webp" alt="instagram" width="30" height="30">
-            </a>
+            <a class="navbar-brand" href="#">Zahir Guercio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="themeToggle" class="btn-icon" aria-label="Cambiar tema">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
-        </nav>
-            </div>
-            <div class="col-4">
-                 <h1> ZAHIR GÜERCIO </h1>
-            </div>
-            <div class="col-7">
+    </nav>
+
+    <section class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <p class="eyebrow">Hola, soy</p>
+                    <h1 class="hero-title">Zahir Guercio</h1>
+                    <h2 class="hero-role">Estudiante y Desarrollador</h2>
+                    <p class="hero-text">Apasionado por el desarrollo web y la creación de soluciones digitales eficientes.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#projects" class="btn-primary-custom">Ver Proyectos</a>
+                        <a href="#contact" class="btn-outline-custom">Contactar</a>
                     </div>
+                </div>
+                <div class="col-lg-4 text-center mt-4 mt-lg-0">
+                    <img src="assets\bocajun.png" alt="Escudo Boca Juniors" class="img-fluid logo-boca">
                 </div>
             </div>
         </div>
-       
-    
-</a>
- 
-        <h2>Sobre nosotros</h2>
+    </section>
 
-    <h3>Nuestra historia</h3>
-    </div>
+    <section id="projects" class="section-block section-alt">
+        <div class="container">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-4">
+                    <a href="https://github.com/el-kitos/MastaCards" target="_blank" class="text-decoration-none">
+                        <div class="card project-card h-100">
+                            <img src="masta.png" class="card-img-top p-3 rounded" alt="MastaCards">
+                            <div class="card-body">
+                                <h3 class="card-title">MastaCards</h3>
+                                <p class="card-text text-muted">Proyecto interactivo desarrollado en equipo.</p>
+                                <span class="project-link">Ver en GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="https://github.com/zahirstylo32/spotify2" target="_blank" class="text-decoration-none">
+                        <div class="card project-card h-100">
+                            <img src="spotify.png" class="card-img-top p-3 rounded" alt="Spotify Clone">
+                            <div class="card-body">
+                                <h3 class="card-title">Spotify 2</h3>
+                                <p class="card-text text-muted">Recreación funcional de la interfaz de Spotify.</p>
+                                <span class="project-link">Ver en GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="https://github.com/zahirstylo32/pokemon22" target="_blank" class="text-decoration-none">
+                        <div class="card project-card h-100">
+                            <img src="pokemon.png" class="card-img-top p-3 rounded" alt="Pokemon App">
+                            <div class="card-body">
+                                <h3 class="card-title">Pokemon App</h3>
+                                <p class="card-text text-muted">Aplicación web consumiendo la API de Pokémon.</p>
+                                <span class="project-link">Ver en GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="github-cta">
+                <a href="https://github.com/zahirstylo32" target="_blank" aria-label="GitHub Profile">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <p>Ver más repositorios en mi perfil de GitHub</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const toggleBtn = document.getElementById('themeToggle');
+        const icon = toggleBtn.querySelector('i');
+        
+        toggleBtn.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            icon.className = newTheme === 'light' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
 </body>
 </html>
