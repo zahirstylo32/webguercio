@@ -1,11 +1,11 @@
 :root {
-    /* Modo Oscuro (Colores Boca Juniors) */
+ 
     --bg-color: #001253;
     --bg-color-soft: #000c36;
     --text-color: #ffffff;
     --text-muted: rgba(255, 255, 255, 0.75);
-    --heading-color: #ffd700; /* Dorado para Zahir Guercio */
-    --accent-color: #ffcc00;  /* Amarillo para Estudiante y Desarrollador */
+    --heading-color: #ffd700; 
+    --accent-color: #ffcc00;  
     --accent-color-2: #ffcc00;
     --card-bg: rgba(255, 255, 255, 0.08);
     --card-border: rgba(255, 215, 0, 0.25);
@@ -14,7 +14,6 @@
 }
 
 html[data-theme="light"] {
-    /* Modo Claro (Invertido: Fondo Amarillo/Dorado, Letras Azules) */
     --bg-color: #ffd700;
     --bg-color-soft: #f0ca00;
     --text-color: #001253;
@@ -100,22 +99,22 @@ h1.hero-title { color: var(--heading-color); }
 }
 
 .btn-primary-custom {
-    background-color: var(--heading-color);
-    color: #001253;
-    font-weight: 700;
-    padding: 0.65rem 1.5rem;
-    border-radius: 8px;
-    border: none;
-    transition: transform 0.2s ease;
-}
-
-.btn-outline-custom {
-    background-color: transparent;
-    color: var(--text-color);
+    background-color: var(--bg-color-soft);
+    color: #ffffff;
     font-weight: 700;
     padding: 0.65rem 1.5rem;
     border-radius: 8px;
     border: 1px solid var(--card-border);
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-outline-custom {
+    background-color: transparent;
+    color: var(--heading-color);
+    font-weight: 700;
+    padding: 0.65rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--heading-color);
     transition: transform 0.2s ease;
 }
 
@@ -183,7 +182,9 @@ h1.hero-title { color: var(--heading-color); }
 .project-card .card-title {
     color: var(--text-color);
     font-size: 1.2rem;
-}
+} 
+
+
 
 .project-card img {
     height: 180px;
